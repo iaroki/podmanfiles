@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo podman run --rm --name=zathura \
+                --hostname=zathura \
+                --ipc=host \
+                -v /etc/localtime:/etc/localtime \
+				-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
+				-v /home/iaroki:/home/iaroki \
+				-e DISPLAY=:0 \
+				quay.io/iaroki/zathura $1

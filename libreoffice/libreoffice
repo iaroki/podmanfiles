@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo podman run --rm --name=libreoffice \
+                --hostname=libreoffice \
+                -v /etc/localtime:/etc/localtime \
+				-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
+				-v /home/iaroki:/home/iaroki \
+				-e DISPLAY=:0 \
+				quay.io/iaroki/libreoffice

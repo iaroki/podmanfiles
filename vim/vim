@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo podman run --interactive \
+                --tty \
+                --rm --name=vim\
+                --hostname=vim\
+				-v /home/iaroki:/home/iaroki \
+				quay.io/iaroki/vim $1

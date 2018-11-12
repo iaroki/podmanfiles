@@ -1,0 +1,1 @@
+docker run -it --rm --name atomic-xorg -v /var/home/iaroki:/home/iaroki -v /tmp/.X11-unix:/tmp/.X11-unix -v /var/run/docker.sock:/var/run/docker.sock --device /dev/dri --privileged -e DISPLAY=:0 iaroki/atomic-xorg

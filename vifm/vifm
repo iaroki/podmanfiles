@@ -1,9 +1,9 @@
 #!/bin/bash
 
 sudo podman run --interactive \
-                --tty \
-                --rm --name=vifm\
-                --hostname=vifm\
-                -v /etc/localtime:/etc/localtime \
+				--tty \
+				--rm --name=vifm\
+				--hostname=vifm\
+				-v /etc/localtime:/etc/localtime \
 				-v /home/iaroki:/home/iaroki \
 				quay.io/iaroki/vifm $1

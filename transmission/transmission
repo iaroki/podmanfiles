@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo podman run --rm --name=transmission \
-                --hostname=transmission \
-                -v /etc/localtime:/etc/localtime \
+				--hostname=transmission \
+				-v /etc/localtime:/etc/localtime \
 				-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 				-v /home/iaroki:/home/iaroki \
 				-e DISPLAY=:0 \

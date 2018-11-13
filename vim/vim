@@ -1,9 +1,9 @@
 #!/bin/bash
 
 sudo podman run --interactive \
-                --tty \
-                --rm --name=vim\
-                --hostname=vim\
-                -v /etc/localtime:/etc/localtime \
+				--tty \
+				--rm --name=vim\
+				--hostname=vim\
+				-v /etc/localtime:/etc/localtime \
 				-v /home/iaroki:/home/iaroki \
 				quay.io/iaroki/vim $1

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo podman run --rm --name=sublime \
-                --hostname=sublime \
-                -v /etc/localtime:/etc/localtime \
+				--hostname=sublime \
+				-v /etc/localtime:/etc/localtime \
 				-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 				-v /home/iaroki:/home/iaroki \
 				-e DISPLAY=:0 \

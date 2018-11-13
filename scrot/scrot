@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo podman run --rm --name=scrot \
-                --hostname=scrot \
-                -v /etc/localtime:/etc/localtime \
+				--hostname=scrot \
+				-v /etc/localtime:/etc/localtime \
 				-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 				-v /home/iaroki:/home/iaroki \
 				-e DISPLAY=:0 \

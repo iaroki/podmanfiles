@@ -3,6 +3,7 @@
 sudo podman run --rm \
                 --hostname=unchrome \
                 --name=unchrome \
+                --network=host \
                 -m 512m \
                 -v /etc/localtime:/etc/localtime \
                 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
@@ -11,6 +12,5 @@ sudo podman run --rm \
                 -v /dev/snd:/dev/snd \
                 -v /dev/dri:/dev/dri \
                 --security-opt seccomp=/home/iaroki/dev/dockerfiles/unchrome/chrome.json \
-                --group-add 63 \
                 --ipc=host \
                 quay.io/iaroki/unchrome

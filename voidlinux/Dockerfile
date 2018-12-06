@@ -22,6 +22,7 @@ RUN yes | /usr/bin/xbps-install -Syu -R https://alpha.de.repo.voidlinux.org/curr
     which \
     tar \
     psmisc \
+    nvi \
      -r /root/voidlinux/root -c /root/voidlinux/cache
 RUN rm -rf /root/voidlinux/var/cache/xbps
 
